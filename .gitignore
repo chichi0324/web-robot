@@ -18,6 +18,13 @@
 *.zip
 *.tar.gz
 *.rar
+*.classpath
+*.project
+*.metadata
+*.settings
+*.DS_Store
+*target
+*.gitattributes
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
