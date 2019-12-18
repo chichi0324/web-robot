@@ -4,6 +4,6 @@
 selenuim+java for web automated testing
 ***
 
-queryWeather.java(Please note line24~25 for windows or mac)<br>
+queryHikingBiji_Chrome.java (Please note line24~25 for windows or mac)<br>
 
 reference:http://www.cnblogs.com/TankXiao/p/5252754.html<br>
