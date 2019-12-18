@@ -21,8 +21,8 @@ public class queryHikingBiji_Chrome
 	
 	public static void main(String[] args) throws InterruptedException {
 		
-//		System.setProperty("webdriver.chrome.driver", "driver/chromedriver_win.exe");// 導入chromedriver for window
-		System.setProperty("webdriver.chrome.driver", "driver/chromedriver_mac");// 導入chromedriver for mac
+		System.setProperty("webdriver.chrome.driver", "driver/chromedriver_win.exe");// 導入chromedriver for window
+//		System.setProperty("webdriver.chrome.driver", "driver/chromedriver_mac");// 導入chromedriver for mac
 		
 		driver = new ChromeDriver();
 		jse = (JavascriptExecutor) driver;
@@ -58,9 +58,10 @@ public class queryHikingBiji_Chrome
 		}
 		
 		//搜尋框輸入"嘉明湖"
-		driver.findElement(By.xpath("//*[@id='wrap']/div/main/div[3]/div[1]/div[2]/div/input")).sendKeys("嘉明湖");
+		driver.findElement(By.xpath("//*[@id=\"wrap\"]/div/main/div[2]/div[1]/div[2]/div/input")).sendKeys("嘉明湖");
 		driver.findElement(By.linkText("搜尋")).click();//點擊 連結"搜尋"
 		
+		Thread.sleep(500);
 		driver.findElements(By.partialLinkText("嘉明湖")).get(0).click();//點擊"含""嘉明湖"第一個連結
 		
 		Thread.sleep(3500);
